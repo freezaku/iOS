@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3446C8FF1DE3F96A008FF33B /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3446C8FE1DE3F96A008FF33B /* btn.wav */; };
 		34A145271DE291EB0094E505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A145261DE291EB0094E505 /* AppDelegate.swift */; };
 		34A145291DE291EB0094E505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A145281DE291EB0094E505 /* ViewController.swift */; };
 		34A1452C1DE291EB0094E505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A1452A1DE291EB0094E505 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3446C8FE1DE3F96A008FF33B /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 		34A145231DE291EB0094E505 /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A145261DE291EB0094E505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34A145281DE291EB0094E505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		34A145251DE291EB0094E505 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				3446C8FE1DE3F96A008FF33B /* btn.wav */,
 				34A145381DE29E0D0094E505 /* Market Fresh.otf */,
 				34A145261DE291EB0094E505 /* AppDelegate.swift */,
 				34A145281DE291EB0094E505 /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3446C8FF1DE3F96A008FF33B /* btn.wav in Resources */,
 				34A145311DE291EB0094E505 /* LaunchScreen.storyboard in Resources */,
 				34A1452E1DE291EB0094E505 /* Assets.xcassets in Resources */,
 				34A1452C1DE291EB0094E505 /* Main.storyboard in Resources */,
@@ -306,6 +310,7 @@
 				34A145371DE291EB0094E505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
