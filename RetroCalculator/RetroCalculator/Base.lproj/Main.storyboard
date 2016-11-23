@@ -221,20 +221,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZd-s4-Bi9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="PRy-Tu-VgS"/>
+                                    <constraint firstAttribute="height" constant="42" id="qIB-cf-4Xp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="clear"/>
+                                <connections>
+                                    <action selector="onClearPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSm-VQ-qss"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aHe-bW-Ch4" firstAttribute="top" secondItem="gsf-iP-kRf" secondAttribute="bottom" constant="130" id="9uM-Xo-kzl"/>
                             <constraint firstAttribute="trailing" secondItem="L6i-OA-Jr4" secondAttribute="trailing" id="9wN-jQ-FBp"/>
                             <constraint firstItem="22d-LZ-Nv5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B3Z-Wm-htn"/>
+                            <constraint firstItem="hZd-s4-Bi9" firstAttribute="top" secondItem="LJc-Y2-8d9" secondAttribute="bottom" constant="32.5" id="M4k-Cy-dZu"/>
                             <constraint firstItem="L6i-OA-Jr4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QoR-j8-Miu"/>
                             <constraint firstItem="fUj-wD-6CO" firstAttribute="centerY" secondItem="gsf-iP-kRf" secondAttribute="centerY" id="RNS-4h-rmC"/>
+                            <constraint firstItem="hZd-s4-Bi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TV1-9t-zIH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L6i-OA-Jr4" secondAttribute="bottom" id="XAm-qc-jIj"/>
                             <constraint firstItem="LJc-Y2-8d9" firstAttribute="centerX" secondItem="aHe-bW-Ch4" secondAttribute="centerX" id="eNH-F0-zOQ"/>
                             <constraint firstItem="gsf-iP-kRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fNS-9g-hvw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="22d-LZ-Nv5" secondAttribute="bottom" id="gdv-GS-ugG"/>
                             <constraint firstItem="gsf-iP-kRf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="icy-YV-1k8"/>
                             <constraint firstItem="LJc-Y2-8d9" firstAttribute="centerY" secondItem="aHe-bW-Ch4" secondAttribute="centerY" id="j8G-Tu-xZ8"/>
+                            <constraint firstItem="hZd-s4-Bi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p2X-Hq-q0I"/>
                             <constraint firstItem="fUj-wD-6CO" firstAttribute="centerX" secondItem="gsf-iP-kRf" secondAttribute="centerX" id="rWR-iG-xyV"/>
                             <constraint firstItem="L6i-OA-Jr4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uYY-IS-Faa"/>
                             <constraint firstAttribute="trailing" secondItem="22d-LZ-Nv5" secondAttribute="trailing" id="upU-Rj-70q"/>
@@ -263,6 +276,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
