@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvc_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Di5-9Z-mNP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="8DB-ZF-sxc"/>
+                                    <constraint firstAttribute="height" constant="100" id="JZ1-ej-N2R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="桌面图片" translatesAutoresizingMaskIntoConstraints="NO" id="rV7-KK-chj" customClass="RoundedImageView" customModule="mvc_test" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="pZp-ez-VqS"/>
+                                    <constraint firstAttribute="height" constant="196" id="yhA-uw-Wwg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="06h-kH-RuE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AWJ-TS-ZzK"/>
+                                    <constraint firstAttribute="width" constant="212" id="QuU-Im-Dnn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1an-f9-dXx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="PZD-x1-239"/>
+                                    <constraint firstAttribute="width" constant="93" id="Yjx-dp-W1g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="renameBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQE-fO-Rpc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Di5-9Z-mNP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="104" id="DAv-6e-5VP"/>
+                            <constraint firstItem="1an-f9-dXx" firstAttribute="top" secondItem="06h-kH-RuE" secondAttribute="bottom" constant="8" id="MaT-ZS-Bb3"/>
+                            <constraint firstItem="1an-f9-dXx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RUG-AB-yoy"/>
+                            <constraint firstItem="rV7-KK-chj" firstAttribute="top" secondItem="Di5-9Z-mNP" secondAttribute="bottom" constant="34" id="UCG-p2-VQX"/>
+                            <constraint firstItem="1an-f9-dXx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VVy-cV-LRL"/>
+                            <constraint firstItem="06h-kH-RuE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVG-lm-fKC"/>
+                            <constraint firstItem="06h-kH-RuE" firstAttribute="top" secondItem="rV7-KK-chj" secondAttribute="bottom" constant="37" id="nAv-Wr-s2a"/>
+                            <constraint firstItem="rV7-KK-chj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sXW-0N-5S4"/>
+                            <constraint firstItem="Di5-9Z-mNP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zj0-b2-qPC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="Di5-9Z-mNP" id="cRy-yd-wMc"/>
+                        <outlet property="renameField" destination="06h-kH-RuE" id="chp-OI-lGD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="桌面图片" width="2560" height="1600"/>
+    </resources>
+</document>

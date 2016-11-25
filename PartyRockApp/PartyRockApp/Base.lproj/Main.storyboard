@@ -145,18 +145,33 @@
                                     <constraint firstAttribute="height" constant="177" id="O0Y-NW-QtM"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzT-dN-LHq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="103" id="Dgh-h7-STW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.85440705130000005" green="0.85440705130000005" blue="0.85440705130000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="CzT-dN-LHq" firstAttribute="top" secondItem="fgc-lq-SaO" secondAttribute="bottom" constant="79" id="4pm-tX-qsx"/>
+                            <constraint firstItem="CzT-dN-LHq" firstAttribute="leading" secondItem="vNS-8u-I9y" secondAttribute="leadingMargin" constant="45" id="LEC-82-uCt"/>
                             <constraint firstItem="fgc-lq-SaO" firstAttribute="top" secondItem="vNS-8u-I9y" secondAttribute="top" id="Ynr-zK-9qp"/>
                             <constraint firstAttribute="trailing" secondItem="fgc-lq-SaO" secondAttribute="trailing" id="YvA-zM-DQi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CzT-dN-LHq" secondAttribute="trailing" constant="45" id="hHW-sF-DIJ"/>
                             <constraint firstItem="fgc-lq-SaO" firstAttribute="leading" secondItem="vNS-8u-I9y" secondAttribute="leading" id="rWY-Fp-3Sr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titileLbl" destination="CzT-dN-LHq" id="T4W-lp-Yle"/>
+                        <outlet property="webView" destination="fgc-lq-SaO" id="Weq-uG-p6t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szq-Hr-Blg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="716.25" y="41.197183098591552"/>
+            <point key="canvasLocation" x="716" y="40.929535232383813"/>
         </scene>
     </scenes>
     <resources>
