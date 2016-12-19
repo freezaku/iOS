@@ -2,9 +2,8 @@
 //  Store+CoreDataClass.swift
 //  DreamLister
 //
-//  Created by 徐鸿力 on 16/12/16.
-//  Copyright © 2016年 Honglix Xu. All rights reserved.
-//  This file was automatically generated and should not be edited.
+//  Created by Jonny B on 8/16/16.
+//  Copyright © 2016 Jonny B. All rights reserved.
 //
 
 import Foundation
